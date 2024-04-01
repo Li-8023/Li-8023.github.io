@@ -203,7 +203,6 @@ img {
 
 /*----------------------- REUSABLE STYLE -----------------------------------------*/
 .container {
-    max-width: 1120px;
     margin-inline: 1.5rem;
 }
 
@@ -217,7 +216,7 @@ img {
 }
 
 .section {
-    padding-block: 5rem 1rem;
+    padding-block: 3rem 1rem;
 }
 
 .section__title {
@@ -254,7 +253,7 @@ a{
 .nav__list {
     display: flex;
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 2rem;
 }
 
 .nav__link {
@@ -269,4 +268,94 @@ a{
     display: block;
     max-width: 50%;
     height: auto;
+    margin-left: -20px;
+}
+
+
+/*----------------------- HOME PAGE -----------------------------------------*/
+.home__container{
+    padding-top: 2.5rem;
+    row-gap: 2rem;
+}
+
+.self__img {
+    width: 270px;
+    justify-self: center;
+}
+
+.home__second__title,
+.home__title,
+.home__content{
+    justify-self: center;
+}
+
+.home__title{
+    font-size:x-large;
+}
+.home__second__title{
+    margin-top: -1rem;
+}
+
+.home__content {
+    margin-bottom: -1rem;
+}
+
+.contact__social{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+}
+
+.contact__social i {
+    font-size: 2rem;
+}
+
+.ri-mail-fill {
+    color: #f2a60c;
+}
+
+.ri-linkedin-box-fill{
+    color: #0077b5;
+}
+
+
+/*----------------------- ABOUT PAGE -----------------------------------------*/
+.about__container{
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+.about__main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-right: 2rem;
+
+}
+.about__title{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.about__content {
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.about__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.about__page__img{
+    display: block;
+    height: auto;
+   height: 20rem;
+    width: 20rem;
 }
