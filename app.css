@@ -139,7 +139,7 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef
+        0 0 25px #0ef
 }
 
 .btn-box:hover {
@@ -148,14 +148,14 @@ body {
         0 0 100px cyan, 0 0 200px cyan
 }
 
-.about{
+.about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.about-img img{
+.about-img img {
     padding-bottom: 20%;
     max-width: 630px;
     height: auto;
@@ -163,15 +163,15 @@ body {
     border-radius: 8px;
 }
 
-.about-text h2{
+.about-text h2 {
     font-size: 60px;
 }
 
-.about-text h2 span{
+.about-text h2 span {
     color: #0ef;
 }
 
-.about-text h4{
+.about-text h4 {
     font-size: 29px;
     font-weight: 600;
     color: black;
@@ -179,8 +179,8 @@ body {
     margin: 15px 0 30px;
 }
 
-.about-text p{
-    color: palevioletred;
+.about-text p {
+    color: yellow;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -202,16 +202,12 @@ section {
 } */
 .container1 {
     width: 45%;
-    /* Adjusted width to allow for side-by-side layout */
     padding: 75px 5%;
-    /* Adjusted padding for better responsiveness */
     margin: 20px;
-    /* Adjusted margin for equal spacing around containers */
     box-sizing: border-box;
-    /* Includes padding in the element's total width and height */
 }
 
-.heading1{
+.heading1 {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -219,35 +215,35 @@ section {
     margin-bottom: 50px;
 }
 
-.bar{
+.bar {
     font-size: 23px;
-
+    margin-top: 20px;
 }
 
-.Technical-bars .bar{
+.Technical-bars .bar {
     margin-top: 40px 0;
 }
 
-.Technical-bars .bar:first-child{
+.Technical-bars .bar:first-child {
     margin-top: 0;
 }
 
-.Technical-bars .bar:last-child{
+.Technical-bars .bar:last-child {
     margin-bottom: 0;
 }
 
-.Technical-bars .bar .info{
+.Technical-bars .bar .info {
     margin-bottom: 5px;
 }
 
-.Technical-bars .bar .info span{
+.Technical-bars .bar .info span {
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
 
-.Technical-bars .bar .progress-line{
+.Technical-bars .bar .progress-line {
     position: relative;
     border-radius: 10px;
     width: 100%;
@@ -257,13 +253,14 @@ section {
     transform: scaleX(0);
     transform-origin: left;
 }
-@keyframes animate{
+
+@keyframes animate {
     to {
         transform: scaleX(1);
     }
 }
 
-.Technical-bars .bar .progress-line span{
+.Technical-bars .bar .progress-line span {
     height: 100%;
     background-color: blue;
     position: absolute;
@@ -274,29 +271,206 @@ section {
 }
 
 
-.progress-line.html span{
+.progress-line.html span {
     width: 90%;
 }
 
-/* .progress-line.css span {
-    width: 90%;
+.progress-line.css span {
+    width: 70%;
 }
 
 .progress-line.javascript span {
-    width: 90%;
+    width: 30%;
 }
 
 .progress-line.java span {
-    width: 90%;
+    width: 60%;
 }
 
 .progress-line.vue span {
-    width: 90%;
+    width: 30%;
 }
 
 .progress-line.react span {
-    width: 90%;
-}  */
+    width: 50%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "70%";
+}
+
+.progress-line.javascript span::after {
+    content: "30%";
+}
+
+.progress-line.java span::after {
+    content: "60%";
+}
+
+.progress-line.vue span::after {
+    content: "30%";
+}
+
+.progress-line.react span::after {
+    content: "50%";
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.radial-bars {
+    width: 100%;
+    display: flex;
+    height: 170px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.radial-bars .radial-bar {
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards
+}
+
+.path-2 {
+    animation: animate-path2 1s 1s linear forwards
+}
+
+.path-3 {
+    animation: animate-path3 1s 1s linear forwards
+}
+
+.path-4 {
+    animation: animate-path4 1s 1s linear forwards
+}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 175;
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 75;
+    }
+}
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+
+
+
+
 
 @keyframes slideRight {
     0% {
