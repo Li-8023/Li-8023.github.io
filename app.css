@@ -3,11 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-    background-color: palevioletred;
-}
-
-body {
-    color: #ededed;
+    /* background-color: palevioletred; */
 }
 
 .header {
@@ -16,13 +12,19 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: pink;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
+.header img{
+    height: 70px;
+    width: auto;
+    margin-right: 20px;
+    margin-left: -80px;
+}
 .logo {
     position: relative;
     font-size: 25px;
@@ -36,7 +38,7 @@ body {
 
 .navbar a {
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -47,10 +49,10 @@ body {
 }
 
 .navbar a:hover {
-    color: aquamarine;
+    color: #824D74;
 }
 
-
+/*=========================== HOME =====================================*/
 .home {
     position: relative;
     width: 100%;
@@ -66,7 +68,7 @@ body {
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -81,11 +83,11 @@ body {
 }
 
 .home-content h3 span {
-    color: #0ef;
+    color: #D37676;
 }
 
 .home-content h1 {
-    font-size: 56px;
+    font-size: 45px;
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
@@ -107,10 +109,10 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid #D37676;
     font-size: 20px;
     border-radius: 50%;
-    color: #0ef;
+    color: #D37676;
     text-decoration: none;
     transition: .5s ease;
     opacity: 0;
@@ -120,34 +122,39 @@ body {
 }
 
 .home-sci a:hover {
-    background: #0ef;
-    color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    background: #D37676;
+    color: #FFF3C7;
+    box-shadow: 0 0 20px #D37676;
+}
+
+.home .content{
+    font-size: 15px;
 }
 
 .btn-box {
     display: inline-block;
     padding: 12px 20px;
-    background: #0ef;
+    background: #D37676;
     border-radius: 40px;
     font-size: 16px;
-    color: #081b29;
+    color: #FFF3C7;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-        0 0 25px #0ef
+    box-shadow: 0 0 5px #D37676,
+        0 0 25px #D37676
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 5px cyan,
-        0 0 25px cyan, 0 0 50px cyan,
-        0 0 100px cyan, 0 0 200px cyan
+    box-shadow: 0 0 5px #e27e7e,
+        0 0 25px #e27e7e, 0 0 50px #e27e7e,
+        0 0 100px #e27e7e, 0 0 200px #e27e7e
 }
 
+/*============================= ABOUT ===================================*/
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -157,22 +164,24 @@ body {
 
 .about-img img {
     padding-bottom: 20%;
-    max-width: 630px;
+    max-width: 600px;
     height: auto;
     width: 100%;
     border-radius: 8px;
+    margin-left: 20px;
 }
 
 .about-text h2 {
-    font-size: 60px;
+    margin-top: -60px;
+    font-size: 50px;
 }
 
 .about-text h2 span {
-    color: #0ef;
+    color: #D37676;
 }
 
 .about-text h4 {
-    font-size: 29px;
+    font-size: 25px;
     font-weight: 600;
     color: black;
     line-height: 1.7;
@@ -180,18 +189,18 @@ body {
 }
 
 .about-text p {
-    color: yellow;
-    font-size: 20px;
+    color: black;
+    font-size: 15px;
     line-height: 1.4;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
+/*============================= SKILLS===================================*/
 
 section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* Centers the containers if there's extra space */
 }
 
 /* .container1{
@@ -207,6 +216,13 @@ section {
     box-sizing: border-box;
 }
 
+.sub-title{
+text-align: center;
+}
+
+.sub-title span{
+    color: #D37676;
+}
 .heading1 {
     text-align: center;
     text-decoration: underline;
@@ -468,6 +484,248 @@ section {
 
 
 
+/* ============================ PORTFOLIO =====================================*/
+
+.main-text{
+ 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+
+.main-text h2 span{
+    color: #0ef;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h5{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p{
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.layer i{
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+}
+
+.row:hover .layer{
+    height: 100%;
+}
+
+
+/* ============================ CONTACT =====================================*/
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+
+.contact-text h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+
+.contact-text h2 span{
+    color: #0ef;
+}
+
+.contact-text h4{
+    margin: 15px 0;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text p{
+    color: rgb(177, 177, 177);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.contact-list{
+    margin-bottom: 3rem;
+}
+
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s case;
+}
+
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
+
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var);
+}
+
+.contact-icons i:hover{
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+
+.contact-form form .send{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+.contact-form form .send:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+
+}
+
+
+/* ============================ FOOTER =====================================*/
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(7, 85, 91);
+    font-weight: 300;
+    margin-top: 70px;
+}
+
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.top i{
+    color: #D37676;
+    background: none;
+    font-size: 30px;
+    padding: 10px;
+    border: 0.5rem;
+    transition: transform .4s;
+}
+
+.top:hover{
+    transform: translateY(-.5rem);
+}
 
 
 
