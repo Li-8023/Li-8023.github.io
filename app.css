@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    /* font-family: 'poppins', sans-serif; */
+    font-family: "Dosis", sans-serif;
     /* background-color: palevioletred; */
 }
 
@@ -64,11 +65,31 @@
 }
 
 .home-content {
-    max-width: 600px;
+    flex: 1 1 60%;
+        /* Takes up 60% of the flex container */
+        max-width: 600px;
+        /* You can adjust or remove this if needed */
+}
+
+.home-img {
+    flex: 1 1 40%;
+    /* Takes up 40% of the flex container */
+    display: flex;
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+}
+
+.home-img img {
+    width: 300px;
+    /* Maintain the original width unless specified */
+    height: 400px;
+    /* Adjusts height automatically to maintain aspect ratio */
 }
 
 .home-content h3 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -96,8 +117,9 @@
 }
 
 .home-content p {
-    font-size: 20px;
+    font-size: 25px;
     opacity: 0;
+    font-weight: 500;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
@@ -131,6 +153,8 @@
     font-size: 15px;
 }
 
+
+
 .btn-box {
     display: inline-block;
     padding: 12px 20px;
@@ -159,21 +183,26 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .about-img img {
     padding-bottom: 20%;
     max-width: 600px;
     height: auto;
-    width: 100%;
+    width: 80%;
     border-radius: 8px;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
+.about-text{
+    margin-right: 20px;
+}
 .about-text h2 {
     margin-top: -60px;
     font-size: 50px;
+    margin-bottom: 20px;
 }
 
 .about-text h2 span {
@@ -190,7 +219,7 @@
 
 .about-text p {
     color: black;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.4;
     margin-bottom: 2rem;
 }
@@ -218,6 +247,7 @@ section {
 
 .sub-title{
 text-align: center;
+font-size: 50px;
 }
 
 .sub-title span{
