@@ -66,9 +66,10 @@
 
 .home-content {
     flex: 1 1 60%;
-        /* Takes up 60% of the flex container */
-        max-width: 600px;
-        /* You can adjust or remove this if needed */
+    /* Takes up 60% of the flex container */
+    max-width: 600px;
+    /* You can adjust or remove this if needed */
+    margin-left: 30px;
 }
 
 .home-img {
@@ -78,6 +79,7 @@
     justify-content: center;
     /* Centers the image horizontally */
     align-items: center;
+    margin-left:50px;
     /* Centers the image vertically */
 }
 
@@ -89,7 +91,7 @@
 }
 
 .home-content h3 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -108,7 +110,7 @@
 }
 
 .home-content h1 {
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
@@ -116,10 +118,10 @@
     animation-delay: 1s;
 }
 
-.home-content p {
-    font-size: 25px;
+.home-content h4 {
+    font-size: 60px;
     opacity: 0;
-    font-weight: 500;
+    font-weight: 700;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
@@ -230,6 +232,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 /* .container1{
@@ -239,28 +242,29 @@ section {
     margin-left: 120px;
 } */
 .container1 {
-    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     padding: 75px 5%;
     margin: 20px;
     box-sizing: border-box;
 }
 
 .sub-title{
-text-align: center;
-font-size: 50px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -30px;
 }
 
 .sub-title span{
     color: #D37676;
 }
-.heading1 {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
-}
 
+.Technical-bars-left,
+.Technical-bars-right {
+    width: 40%;
+    /* Each takes up half the width of the container */
+}
 .bar {
     font-size: 23px;
     margin-top: 20px;
@@ -283,7 +287,7 @@ font-size: 50px;
 }
 
 .Technical-bars .bar .info span {
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
@@ -308,39 +312,52 @@ font-size: 50px;
 
 .Technical-bars .bar .progress-line span {
     height: 100%;
-    background-color: blue;
+    background-color: #D37676;
     position: absolute;
     border-radius: 10px;
     animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
     transform: scaleX(0);
     transform-origin: left;
 }
-
+.large-icon{
+    font-size: 30px;
+}
 
 .progress-line.html span {
     width: 90%;
 }
 
 .progress-line.css span {
-    width: 70%;
+    width: 80%;
 }
 
 .progress-line.javascript span {
-    width: 30%;
+    width: 80%;
 }
 
 .progress-line.java span {
-    width: 60%;
+    width: 90%;
 }
 
 .progress-line.vue span {
-    width: 30%;
-}
-
-.progress-line.react span {
     width: 50%;
 }
 
+.progress-line.react span {
+    width: 60%;
+}
+
+.progress-line.golang span {
+    width: 10%;
+}
+
+.progress-line.mongodb span {
+    width: 30%;
+}
+
+.progress-line.postgresql span {
+    width: 60%;
+}
 .progress-line span::after {
     position: absolute;
     padding: 1px 8px;
@@ -359,23 +376,35 @@ font-size: 50px;
 }
 
 .progress-line.css span::after {
-    content: "70%";
+    content: "80%";
 }
 
 .progress-line.javascript span::after {
-    content: "30%";
+    content: "80%";
 }
 
 .progress-line.java span::after {
-    content: "60%";
+    content: "90%";
 }
 
 .progress-line.vue span::after {
-    content: "30%";
+    content: "50%";
 }
 
 .progress-line.react span::after {
-    content: "50%";
+    content: "60%";
+}
+
+.progress-line.golang span::after {
+    content: "10%";
+}
+
+.progress-line.mongodb span::after {
+    content: "30%";
+}
+
+.progress-line.postgresql span::after {
+    content: "60%";
 }
 
 .progress-line span::before {
@@ -399,120 +428,6 @@ font-size: 50px;
     }
 }
 
-.radial-bars {
-    width: 100%;
-    display: flex;
-    height: 170px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.radial-bars .radial-bar {
-    width: 50%;
-    height: 170px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.radial-bars .radial-bar svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    width: 120px;
-    height: 160px;
-}
-
-.radial-bars .radial-bar .progress-bar {
-    stroke-width: 10;
-    stop-color: black;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-    animation: animate-bar 1s linear forwards;
-
-}
-
-@keyframes animate-bar {
-    100% {
-        stroke-dashoffset: -1;
-    }
-}
-
-.path {
-    stroke-width: 10;
-    stroke: #0ef;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-}
-
-.path-1 {
-    animation: animate-path1 1s 1s linear forwards
-}
-
-.path-2 {
-    animation: animate-path2 1s 1s linear forwards
-}
-
-.path-3 {
-    animation: animate-path3 1s 1s linear forwards
-}
-
-.path-4 {
-    animation: animate-path4 1s 1s linear forwards
-}
-
-@keyframes animate-path1{
-    100%{
-        stroke-dashoffset: 50;
-    }
-}
-
-@keyframes animate-path2 {
-    100% {
-        stroke-dashoffset: 175;
-    }
-}
-
-@keyframes animate-path3 {
-    100% {
-        stroke-dashoffset: 125;
-    }
-}
-
-@keyframes animate-path4 {
-    100% {
-        stroke-dashoffset: 75;
-    }
-}
-.radial-bar .percentage{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-}
-
-.radial-bar .text{
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50px);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
-
 
 /* ============================ PORTFOLIO =====================================*/
 
@@ -526,10 +441,11 @@ font-size: 50px;
     font-size: 60px;
     line-height: 1;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .main-text h2 span{
-    color: #0ef;
+    color: #D37676;
 }
 
 .portfolio-content{
@@ -542,6 +458,8 @@ font-size: 50px;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
 .row img{
@@ -553,7 +471,7 @@ font-size: 50px;
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #E9A89B);
     position: absolute;
     border-radius: 8px;
     left: 0;
