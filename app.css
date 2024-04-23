@@ -62,12 +62,13 @@
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
+    margin-top: 10px;
 }
 
 .home-content {
     flex: 1 1 60%;
     /* Takes up 60% of the flex container */
-    max-width: 600px;
+    max-width: 400px;
     /* You can adjust or remove this if needed */
     margin-left: 30px;
 }
@@ -91,7 +92,7 @@
 }
 
 .home-content h3 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -110,7 +111,7 @@
 }
 
 .home-content h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
@@ -152,7 +153,7 @@
 }
 
 .home .content{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -221,7 +222,7 @@
 
 .about-text p {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     margin-bottom: 2rem;
 }
@@ -287,7 +288,7 @@ section {
 }
 
 .Technical-bars .bar .info span {
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
@@ -430,7 +431,9 @@ section {
 
 
 /* ============================ PORTFOLIO =====================================*/
-
+.portfolio{
+    margin-top: -70px;
+}
 .main-text{
  
     margin-top: 10px;
@@ -438,7 +441,7 @@ section {
 }
 
 .main-text h2{
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1;
     text-align: center;
     margin-bottom: 30px;
@@ -493,14 +496,14 @@ section {
 
 .layer h5{
     color: white;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .layer p{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     line-height: 1.8;
 }
 
@@ -537,7 +540,7 @@ section {
 }
 
 .contact-text h2{
-    font-size: 90px;
+    font-size: 50px;
     line-height: 1;
     text-align: center;
     margin-bottom: 30px;
@@ -550,13 +553,13 @@ section {
 .contact-text h4{
     margin: 15px 0;
     color: rgba(148, 144, 144, 0.767);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 .contact-text p{
     color: rgb(111, 109, 109);
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     margin-bottom: 2rem;
 }
@@ -581,6 +584,10 @@ section {
 .contact-list li a:hover{
     transform: scale(1.01) translateY(-5px);
     color: #D37676;
+}
+
+.contact-icons{
+    margin-top: -65px;
 }
 
 .contact-icons i{
