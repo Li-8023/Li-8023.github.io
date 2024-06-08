@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Li He Personal Website" />
-    <meta property="og:description" content="Welcome to Li He's personal website." />
+    <meta property="og:description"
+        content="Welcome to Li He's personal website. Learn more about his projects, skills, and interests." />
     <meta property="og:url" content="https://li-8023.github.io/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2023/04/12/12/02/cute-7920120_1280.jpg" />
+    <meta name="author" content="Li He">
     <title>Li He Personal Website</title>
     <link rel="stylesheet" href="app.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
@@ -19,7 +23,330 @@
 </head>
 
 <body>
-    <h1>Welcome to Li He's Personal Website</h1>
+    <header class="header">
+        <!-- <a href="#" class="logo">Li He</a> -->
+        <img src="img/signature.png" alt="" class="logo">
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skill" style="--i:3">Skill</a>
+            <a href="#portfolio" style="--i:4">Portfolio</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <!-- <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Li He 贺力</h3>
+                <h3>I'm a <span class="text"></span></h3>
+                <h4 class="content">I am currently pursuing a Master of Science in Computer Science at the Georgia
+                    Institute of
+                    Technology.
+                    <!-- <br>I hold a Bachelor of Science in Computer Science from Arizona State University. -->
+                    <br>You can find my
+                    <a href="https://Li-8023.github.io/document/Li_He_Intern_Resume%20(1).pdf" style="color: #D37676;"
+                        target="_blank">Resume</a> here.
+                </h4>
+                <div class="home-sci">
+                    <a href="https://www.facebook.com/li.he.3304673" style="--i:5"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com/in/li-he-31ba93248/" style="--i:6"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="mailto:lihe57156@gmail.com" style="--i:7"><i class='bx bxl-gmail'></i></a>
+                    <a href="https://github.com/Li-8023" style="--i:8"><i class='bx bxl-github'></i></a>
+                </div>
+                <a href="#about" class="btn-box">More About Me</a>
+
+        </div>
+        <div class="home-img">
+            <img src="img/selfImage.jpg" alt="">
+        </div>
+
+    </section> -->
+
+    <!-- <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/ski.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <p>
+                I am a graduate student at Georgia Tech, having graduated summa cum laude from Arizona State University.
+                I excel in <b>web
+                    development</b> and <b>full-stack development</b>. I have completed two internships at China
+                Telecom, a global leader in
+                telecommunications. My first internship was as a Software Development Engineer, and the second was as a
+                Frontend
+                Developer. In these roles, I specialized in both frontend and backend development, crafting
+                comprehensive web
+                applications that enhance user experience and operational efficiency.
+            </p>
+            <p>
+                My research interests lie in the field of <b>human-computer interaction</b>. During my time at Arizona
+                State University, I was
+                a member of the Birth Lab, where I engaged in cutting-edge research focused on designing, constructing,
+                and evaluating
+                magnetic robots for tissue resection within the human gastrointestinal tract.
+            </p>
+            <p>
+                Outside of my professional pursuits, I am passionate about <b>Latin dance</b>, an activity that allows
+                me to
+                express creativity
+                and maintain physical fitness. I also enjoy <b>skiing</b>, which not only challenges me but also
+                provides a
+                thrilling way to
+                experience the great outdoors.
+            </p>
+
+        </div>
+    </section>
+
+    <h1 class="sub-title">My <span>Skills</span></h1> -->
+
+    <!-------------------------------- SKILL ----------------------------------------------------->
+    <!-- <section class="skill" id="skill">
+        <div class="container1" id="Skills">
+
+            <div class="Technical-bars-left">
+                <div class="Technical-bars">
+
+                    <div class="bar"><i style="color: #c95d2e" class='bx bxl-html5 large-icon'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i style="color: #147bbc" class='bx bxl-css3 large-icon'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i style="color: #f7d700" class='bx bxl-javascript large-icon'></i>
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-line javascript">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i style="color: #00ADD8" class='bx bxl-go-lang large-icon'></i>
+                        <div class="info">
+                            <span>Golang</span>
+                        </div>
+                        <div class="progress-line golang">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i style="color: #0064a5" class='bx bxl-postgresql large-icon'></i>
+                        <div class="info">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="progress-line postgresql">
+                            <span></span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="Technical-bars-right">
+                <div class="Technical-bars">
+                    <div class="bar"><i style="color: #3963c2" class='bx bxl-java large-icon'></i>
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i style="color: #8bc981" class='bx bxl-vuejs large-icon'></i>
+                        <div class="info">
+                            <span>Vue</span>
+                        </div>
+                        <div class="progress-line vue">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i style="color: #94dfea" class='bx bxl-react large-icon'></i>
+                        <div class="info">
+                            <span>React</span>
+                        </div>
+                        <div class="progress-line react">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i style="color: #589636;" class='bx bxl-mongodb large-icon'></i>
+                        <div class="info">
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="progress-line mongodb">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i class='bx bxl-spring-boot large-icon' style='color:#8cbf40'></i>
+                        <div class="info">
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="progress-line springboot">
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section> -->
+
+    <!------------------------------------- PORTFOLIO -------------------------------------------------->
+    <!-- <section>
+        <div class="portfolio" id="portfolio">
+            <div class="main-text" id="project">
+                <h2>Latest <span>Project</span></h2>
+
+                <div class="portfolio-content">
+                    <div class="row">
+                        <img src="img/china_telecom.png">
+                        <div class="layer">
+                            <h5>China Telecom Attendance System</h5>
+                            <p>This attendance system is custom-made for Ji'an Telecom to manage and streamline their
+                                employee attendance processes.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/ASU Admission System.png">
+                        <div class="layer">
+
+                            <h5>ASU Capstone Project Platform</h5>
+                            <p>Enhances the ASU Capstone Website by introducing additional functionalities to improve
+                                interaction between
+                                students, sponsors, and administration.
+                                <a href="https://github.com/Li-8023/ASU-Admin-Vue3" style="color: #ebd071;"
+                                    target="_blank">(GITHUB REPO)</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/Lykka_village.png">
+                        <div class="layer">
+
+                            <h5>Lykka Village Platform</h5>
+                            <p>This platform designed to facilitate mutual support within communities
+                                for essential needs like childcare and housekeeping.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/Skyline_Sneakers.png">
+                        <div class="layer">
+
+                            <h5>Skyline Sneakers Platform</h5>
+                            <p>The website provides tailored functionalities for both regular users, who can manage
+                                their shopping experience, and
+                                administrators, who can oversee and modify product and user details.
+                                <a href="https://github.com/Li-8023/Skyline-Sneakers-Online-Shopping"
+                                    style="color: #ebd071;" target="_blank">(GITHUB REPO)</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/big_screen.png">
+                        <div class="layer">
+
+                            <h5>Enterprise-level Large-screen Data Display System</h5>
+                            <p>This system is an enterprise-level large-screen data display platform, developed with
+                                Vue.js, Datav, and ECharts,
+                                designed to enable real-time data monitoring and support decision-making processes.
+                                <a href="https://github.com/Li-8023/big-screen-vue2" style="color: #ebd071;"
+                                    target="_blank">(GITHUB
+                                    REPO)</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/Magnetic_robots.png">
+                        <div class="layer">
+
+                            <h5>Research Experience</h5>
+                            <p>Engaged in a cutting-edge research project titled "Magnetic Micro-robots for Medical
+                                Applications" aimed at designing, constructing, and evaluating magnetic robots for
+                                tissue resection within the human GI tract
+                                <a href="https://forge.engineering.asu.edu/participant/he-li/" style="color: #ebd071;"
+                                    target="_blank">(POSTER)</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's Work Together!</h4>
+            <p>Are you looking for a dedicated professional to bring your digital ideas to life? Whether it's a sleek
+                website, a robust
+                application, or a custom software solution, I'm here to help. With a keen eye for detail and a passion
+                for creating
+                user-centric designs, I ensure every project not only meets but exceeds expectations.
+            </p>
+            <br>
+            <p>
+                Get in touch to discuss how we can collaborate on your next project and turn your vision into reality.
+            </p>
+            <div class="contact-list">
+                <li><i class='bx bxs-envelope bx-tada large-icon'></i>lihe57156@gmail.com</li>
+                <li><i class='bx bxs-phone-call bx-tada large-icon'></i>571-267-0952</li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://github.com/Li-8023"><i class='bx bxl-github large-icon'></i></a>
+                <a href="https://www.linkedin.com/in/li-he-31ba93248/"><i
+                        class='bx bxl-linkedin-square large-icon'></i></a>
+            </div>
+
+        </div>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/e884fbb3df5f3eb16ce82fa01a4a6ec6" method="POST">
+                <input type="text" name="name" placeholder="Please Enter Your Name" required>
+                <input type="email" name="email" placeholder="Please Enter Your Email Address" required>
+                <input type="text" name="subject" placeholder="Please Enter Your Subject">
+                <textarea name="message" cols="40" rows="10" placeholder="Please Enter Your Message"
+                    required></textarea>
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+    </section> -->
+    <!-- <div class="last-text">
+        <p>Developed by Li He &copy2024</p>
+    </div>
+    <a href="#" class="top"><i class='bx bxs-up-arrow-circle'></i></a> -->
+    <script src="main.js"></script>
 </body>
 
 </html>
